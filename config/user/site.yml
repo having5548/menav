@@ -103,6 +103,9 @@ social:
   - name: Steam
     url: https://steamcommunity.com/id/having5548/
     icon: fab fa-steam
+  - name: Email
+    url: mailto:website@223910.xyz
+    icon: fas fa-envelope
 
 # 导航配置（顺序第一项即首页/默认打开页）
 navigation:
