@@ -152,7 +152,7 @@ categories:
       - name: RainCloud
         url: https://www.rainyun.com
         icon: fas fa-cloud-rain
-        descr iption:雨云，新一代节点计费云服务平台
+        description: 雨云，新一代节点计费云服务平台
       - name: Simpfun
         url: https://www.simpfun.cn
         icon: fas fa-cubes
