@@ -149,10 +149,10 @@ categories:
         url: https://www.openfrp.net
         icon: fas fa-network-wired
         description: 国内知名内网穿透服务
-      - name:RainCloud
-        url:https://www.rainyun.com
-        icon:fas fa-cloud-rain
-        description:雨云，新一代节点计算平台
+      - name: RainCloud
+        url: https://www.rainyun.com
+        icon: fas fa-cloud-rain
+        descr iption:雨云，新一代节点计费云服务平台
       - name: Simpfun
         url: https://www.simpfun.cn
         icon: fas fa-cubes
