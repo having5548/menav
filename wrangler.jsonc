@@ -1,8 +1,14 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  // 与 Cloudflare 上 Pages 项目的名称保持一致（Dashboard 里项目标题的名字）
   "name": "menav",
-  // Pages 专用字段：Pages 项目必须用 pages_build_output_dir 指定静态产物目录，
-  // 不能用 Workers 的 assets（否则 wrangler pages deploy 会忽略本文件）
-  "pages_build_output_dir": "./dist"
+  "compatibility_date": "2026-09-01",
+  // 纯静态站点（astro output: 'static'）：不需要 @astrojs/cloudflare 适配器，
+  // 直接把 dist/ 作为 Workers 静态资源上传即可。
+  // 注意必须有这份配置文件：否则 `wrangler deploy` 会触发 autoconfig，
+  // 检测到 Astro 后去执行 `astro add cloudflare`，从而安装失败、整个部署报错。
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
 }
