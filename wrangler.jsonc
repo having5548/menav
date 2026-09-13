@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // 与 Cloudflare 上 Pages 项目的名称保持一致（Dashboard 里项目标题的名字）
+  "name": "menav",
+  // Pages 专用字段：Pages 项目必须用 pages_build_output_dir 指定静态产物目录，
+  // 不能用 Workers 的 assets（否则 wrangler pages deploy 会忽略本文件）
+  "pages_build_output_dir": "./dist"
+}
